@@ -1,0 +1,21 @@
+<script>
+    function citycountry(city, country, method) {
+
+    const url = `http://api.aladhan.com/v1/timingsByCity?city=${city}&country=${country}&method=2`
+
+    async function getData() {
+        const response = await fetch(url)
+        const data = await response.json()
+        const timings = {}
+        fivePrayers = ["Fajr", "Dhuhr", "Asr", "Maghrib", "Isha"]
+        for (const [key, value] of Object.entries(data.data.timings)) {
+            if (fivePrayers.includes(key))
+            timings[key] = value
+        }
+        console.log(timings)
+    }
+    getData()
+    }
+
+    citycountry("toronto","canada",2);
+</script>
