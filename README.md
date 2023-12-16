@@ -12,6 +12,6 @@ This project features a fully automated bot implemented with node.js and discord
 
 ## Usage
 To add the bot to your server, you can either:
-- (Recommended) Clone the repository files and store it locally or onto a hosting site. To run the bot, first configure the `config.json` file located in
+- (Recommended) Clone the repository files and store it locally or onto a hosting site. To run the bot, first go to `https://discord.com/developers` to create your own bot. Configure the `config.json` file located in the upper most parent directory.
 - Add the bot to your server using my invite link `https://discord.com/api/oauth2/authorize?client_id=1168244099040690216&permissions=18427594140736&scope=bot+applications.commands`. By accepting this invite link, you consent that the bot be able to read and act on slash commands given to it, and to write/reply. The bot is also given join and speak permissions. There is currently no dedicated server for this bot (other than a personal computer) so the bot will be offline for the most part.
 
