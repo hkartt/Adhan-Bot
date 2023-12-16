@@ -26,4 +26,8 @@ To add the bot to your server, you can either:
 - `/prayertimes`: Return an embed listing the prayer and its respective prayer time. /location command is required as a prerequisite.
 - `/nextprayer`: Returns the time and name of the prayer that is next to occur based on server time. /location command is required as a prerequisite.
 - `/notify`: Toggle notification settings. Toggles between: Tagging all users to notify of latest prayer OR staying silent on each prayer time.
+- `/join`: Join current voice channel to manually play prayer call audio.
 
+## Future Additions
+- `/channel`: Set general channel for bot to automatically play prayer call on due times.
+- `/hadith`: Grab random hadith verse from online API and display in chat.
