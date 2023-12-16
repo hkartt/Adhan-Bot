@@ -21,8 +21,9 @@ To add the bot to your server, you can either:
 
 ## Functions 
 - `/help`: The command to fall back on when you do not understand what a command does or want to find out the functionality of the bot. Returns an embed of functions and their descriptions.
-- `/location <city> <country>`: Set <city> and <country> parameters for the server. These parameters are passed into an API to fetch relevant prayer data for that location.
-- `/method <method>`: Set <method> parameter between 'Hanafi' and 'other'. If not called, the juristic prayer method would be defaulted to 'other'.
+- `/location <city> <country>`: Set \<city\> and \<country\> parameters for the server. These parameters are passed into an API to fetch relevant prayer data for that location.
+- `/method <method>`: Set \<method\> parameter between 'Hanafi' and 'other'. If not called, the juristic prayer method would be defaulted to 'other'.
 - `/prayertimes`: Return an embed listing the prayer and its respective prayer time. /location command is required as a prerequisite.
 - `/nextprayer`: Returns the time and name of the prayer that is next to occur based on server time. /location command is required as a prerequisite.
+- `/notify`: Toggle notification settings. Toggles between: Tagging all users to notify of latest prayer / Staying silent on each prayer time.
 
