@@ -11,5 +11,7 @@ This project features a fully automated bot implemented with node.js and discord
 - **Responsive:** Function calls are instantly responded to due to the use of asynchronous functions. This means that multiple users can simultaneously request information from the bot without being delivered by a queue basis.
 
 ## Usage
-
+To add the bot to your server, you can either:
+- (Recommended) Clone the repository files and store it locally or onto a hosting site. To run the bot, first configure the `config.json` file located in
+- Add the bot to your server using my invite link `https://discord.com/api/oauth2/authorize?client_id=1168244099040690216&permissions=18427594140736&scope=bot+applications.commands`. By accepting this invite link, you consent that the bot be able to read and act on slash commands given to it, and to write/reply. The bot is also given join and speak permissions. There is currently no dedicated server for this bot (other than a personal computer) so the bot will be offline for the most part.
 
