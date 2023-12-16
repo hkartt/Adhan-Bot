@@ -20,3 +20,9 @@ To add the bot to your server, you can either:
 - Add the bot to your server using my invite link `https://discord.com/api/oauth2/authorize?client_id=1168244099040690216&permissions=18427594140736&scope=bot+applications.commands`. By accepting this invite link, you consent that the bot be able to read and act on slash commands given to it, and to write/reply. The bot is also given join and speak permissions. There is currently no dedicated server for this bot (other than a personal computer) so the bot will be offline for the most part.
 
 ## Functions 
+- `/help`: The command to fall back on when you do not understand what a command does or want to find out the functionality of the bot. Returns an embed of functions and their descriptions.
+- `/location <city> <country>`: Set <city> and <country> parameters for the server. These parameters are passed into an API to fetch relevant prayer data for that location.
+- `/method <method>`: Set <method> parameter between 'Hanafi' and 'other'. If not called, the juristic prayer method would be defaulted to 'other'.
+- `/prayertimes`: Return an embed listing the prayer and its respective prayer time. /location command is required as a prerequisite.
+- `/nextprayer`: Returns the time and name of the prayer that is next to occur based on server time. /location command is required as a prerequisite.
+
