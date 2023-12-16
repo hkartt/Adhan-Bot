@@ -7,3 +7,9 @@ This project features a fully automated bot implemented with node.js and discord
 - **Information Integrity:** Prayer data is retrieved in real time each time a function is called. This is to ensure that the up-to-date prayer times are listed based on the current location and day. 
 
 - **Presentation:** Bot properly embeds the prayer times of the day in a readable format, alongside the current date. The manual page assigns descriptions alongside their respectful commands- an embed which is ephemeral to the caller.
+
+- **Responsive:** Function calls are instantly responded to due to the use of asynchronous functions. This means that multiple users can simultaneously request information from the bot without being delivered by a queue basis.
+
+## Usage
+
+
