@@ -25,7 +25,8 @@ module.exports = {
             } else {
                 city = obj[interaction.guildId].city;
                 country = obj[interaction.guildId].country;
-                fn.nextPrayer(interaction.createdAt, city, country).then((obj) => {
+                time = interaction.createdAt.getHours() + ":" + interaction.createdAt.getMinutes();
+                fn.nextPrayer(time, city, country).then((obj) => {
                     interaction.reply("The next prayer is " + Object.keys(obj)[0] + " at " + Object.values(obj)[0]);
                 });
             }

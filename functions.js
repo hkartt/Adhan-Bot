@@ -21,7 +21,7 @@ async function citycountry(city, country, method) {
  
 
 async function nextPrayer(date, city, country){
-    const time = date.getHours() + ":" + date.getMinutes();
+    const time = date;
     const times = await citycountry(city, country, 2);
 
     let next_prayer = "";
@@ -97,6 +97,20 @@ async function getlocation(interaction) {
     interaction.city = obj[interaction.guildId].city;
 }
 
+async function addTime(date1, milliseconds) {
+    const time1_parse = date1.split(':');
+    var hours = Math.floor(milliseconds / 3600000) + parseInt(time1_parse[0]);
+    var minutes = Math.floor((milliseconds % 3600000) / 60000) + parseInt(time1_parse[1]);
+    if (minutes >= 60) {
+        minutes -= 60;
+        hours += 1;
+    }
+    if (hours >= 24) {
+        hours -= 24;
+    }
+    const time2 = (hours + ":" + minutes);
+    return time2;
+}
 
 module.exports = {
     citycountry,
@@ -105,5 +119,6 @@ module.exports = {
     greater_time,
     getlocation,
     timeDifference,
+    addTime
 }
 //console.log(citycountry("toronto","canada",2));
