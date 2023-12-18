@@ -59,8 +59,6 @@ function greater_time(time1,time2) {
 }
 
 async function timeDifference(time1, time2) {
-    console.log(time1);
-    console.log(time2);
     const time1_parse = time1.split(':');
     const time2_parse = time2.split(':');
 
@@ -83,13 +81,6 @@ async function printData() {
     console.log(data);
 }
 
-async function testTimeout(time) {
-    setTimeout(function() {
-        console.log("hello");
-    }, time);
-
-}
-
 const fs = require('fs').promises;
 
 async function getlocation(interaction) {
@@ -106,13 +97,13 @@ async function getlocation(interaction) {
     interaction.city = obj[interaction.guildId].city;
 }
 
-testTimeout(10000);
+
 module.exports = {
     citycountry,
     nextPrayer,
     printData,
     greater_time,
     getlocation,
-    timeDifference
+    timeDifference,
 }
 //console.log(citycountry("toronto","canada",2));
