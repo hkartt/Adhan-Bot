@@ -8,6 +8,7 @@ module.exports = {
         .setDescription('Join current voice channel'),
 
     async execute(interaction) {
+        console.log("Guild ID: " + interaction.guildId + " ran the command \\join")
         // Get the voice channel the user is in
         const channel = interaction.member.voice.channel;
 

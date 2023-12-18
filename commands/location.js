@@ -19,6 +19,7 @@ module.exports = {
     
 
     async execute(interaction){
+        console.log("Guild ID: " + interaction.guildId + " ran the command \\location")
         var fs = require('fs');
 
         fs.readFile('../data/data.json', 'utf8', function readFileCallback(err, data){
@@ -26,16 +27,18 @@ module.exports = {
                 console.log(err);
             } else {
             
-            obj = JSON.parse(data); //now it an object
+            obj = JSON.parse(data);
+            // get the data for the current guild. place city and country in the object
             obj[interaction.guildId] = {
                 "city": interaction.options.getString('city'),
                 "country": interaction.options.getString('country')
-            }; //add some data
+            }; 
+
             json = JSON.stringify(obj); //convert it back to json
             fs.writeFile('../data/data.json', json, 'utf8', function(err){
                 if(err) throw err;
                 console.log('complete');
-                }); // write it back
+                });
             }});
         const string = `Your location has been set to ${interaction.options.getString('city')}, ${interaction.options.getString('country')}.` 
         || "Something went wrong.";
