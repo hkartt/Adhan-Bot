@@ -32,3 +32,5 @@ To add the bot to your server, you can either:
 ## Future Additions
 - `/channel`: Set general channel for bot to automatically play prayer call on due times.
 - `/hadith`: Grab random hadith verse from online API and display in chat.
+
+https://github.com/hkartt/Adhan-Bot/assets/128760459/2d3985c7-c12c-47da-a62e-41cca02d1833
